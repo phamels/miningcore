@@ -110,7 +110,7 @@ namespace MiningCore.Native
         public static extern int lyra2rev2(byte* input, byte* output);
 
         [DllImport("libmultihash", EntryPoint = "lyra2z330_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2z330(byte* input, byte* output);
+        public static extern int lyra2z330(byte* input, byte* output, uint inputLength);
 
         [DllImport("libmultihash", EntryPoint = "equihash_verify_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern bool equihash_verify(byte* header, int headerLength, byte* solution, int solutionLength);

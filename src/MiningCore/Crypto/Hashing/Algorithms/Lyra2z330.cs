@@ -17,7 +17,7 @@ namespace MiningCore.Crypto.Hashing.Algorithms
             {
                 fixed (byte* output = result)
                 {
-                    LibMultihash.lyra2z330(input, output);
+                    LibMultihash.lyra2z330(input, output, (uint)data.Length);
                 }
             }
 
