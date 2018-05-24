@@ -9,7 +9,6 @@ namespace MiningCore.Crypto.Hashing.Algorithms
         public byte[] Digest(byte[] data, params object[] extra)
         {
             Contract.RequiresNonNull(data, nameof(data));
-            Contract.Requires<ArgumentException>(data.Length == 80, $"{nameof(data)} must be exactly 80 bytes long");
 
             var result = new byte[32];
 
