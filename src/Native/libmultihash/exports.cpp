@@ -185,14 +185,14 @@ extern "C" MODULE_API void lyra2re_export(const char* input, char* output)
 	lyra2re_hash(input, output);
 }
 
-extern "C" MODULE_API void lyra2rev2_export(const char* input, char* output, uint32_t input_len)
+extern "C" MODULE_API void lyra2rev2_export(const char* input, char* output)
 {
 	lyra2re2_hash(input, output);
 }
 
-extern "C" MODULE_API void lyra2z330_export(const char* input, char* output)
+extern "C" MODULE_API void lyra2z330_export(const char* input, char* output, uint32_t input_len)
 {
-	lyra2z330_hash(input, output);
+	lyra2z330_hash(input, output, input_len);
 }
 
 extern "C" MODULE_API void x16r_export(const char* input, char* output, uint32_t input_len)
