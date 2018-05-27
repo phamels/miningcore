@@ -32,8 +32,8 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
-#include "lyra2z330.h"
 #include "Lyra2.h"
+#include "lyra2z330.h"
 
 void lyra2z330_hash(const char* input, char* output, uint32_t len)
 {
