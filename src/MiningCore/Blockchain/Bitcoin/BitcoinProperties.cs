@@ -65,7 +65,7 @@ namespace MiningCore.Blockchain.Bitcoin
             new BitcoinCoinProperties(Math.Pow(2, 8), sha256D, lyra2Rev2, new DigestReverser(lyra2Rev2), "Lyra2re2");
 
         private static readonly BitcoinCoinProperties lyra2z330Coin =
-            new BitcoinCoinProperties(Math.Pow(2, 8), sha256D, lyra2z330, new DigestReverser(lyra2z330), "Lyra2z330");
+            new BitcoinCoinProperties(Math.Pow(2, 8), sha256D, lyra2z330, sha256DReverse, "Lyra2z330");
 
         private static readonly BitcoinCoinProperties x11Coin =
             new BitcoinCoinProperties(1, sha256D, x11, new DigestReverser(x11), "X11");
